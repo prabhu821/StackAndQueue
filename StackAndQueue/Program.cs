@@ -6,10 +6,12 @@
         {
             Console.WriteLine("Stack And Queue !");
             LinkedListStack stack = new LinkedListStack();
+            LinkedListQueue queue = new LinkedListQueue();
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nSelect the operation to perform \n1.Create Stack \n2.Displat Stack \n3.Peek \n4.Pop \n5.Exit"); 
+                Console.WriteLine("\nSelect the operation to perform \n1.Create Stack \n2.Display Stack \n3.Peek \n4.Pop \n5.Create Queue " +
+                    "\n6.Display Queue \n7.Exit"); 
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -26,6 +28,14 @@
                         break;
                     case 4:
                         stack.Pop();
+                        break;
+                    case 5:
+                        queue.Enqueue(56);
+                        queue.Enqueue(30);
+                        queue.Enqueue(70);
+                        break;
+                    case 6:
+                        queue.Display();
                         break;
                     default:
                         flag = false;
