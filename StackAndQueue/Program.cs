@@ -11,7 +11,7 @@
             while (flag)
             {
                 Console.WriteLine("\nSelect the operation to perform \n1.Create Stack \n2.Display Stack \n3.Peek \n4.Pop \n5.Create Queue " +
-                    "\n6.Display Queue \n7.Exit"); 
+                    "\n6.Display Queue \n7.Dequeue \n8.Exit"); 
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -36,6 +36,9 @@
                         break;
                     case 6:
                         queue.Display();
+                        break;
+                    case 7:
+                        queue.Dequeue();
                         break;
                     default:
                         flag = false;

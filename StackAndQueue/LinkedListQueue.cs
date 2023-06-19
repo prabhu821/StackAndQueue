@@ -29,7 +29,7 @@ namespace StackAndQueue
             Console.WriteLine("{0} is inserted into Queue", node.data);
         }
 
-        //DEQUEUE
+        //uc4-DEQUEUE
         public void Dequeue()
         {
             if (this.head == null)
@@ -45,7 +45,7 @@ namespace StackAndQueue
             Display();
         }
 
-        //DISPLAY
+        //uc3-DISPLAY
         public void Display()
         {
             Node temp = this.head;
